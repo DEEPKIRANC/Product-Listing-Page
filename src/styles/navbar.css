@@ -2,11 +2,16 @@
   padding: 0.5rem;
   background: #047bd5;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
 }
 .navbar > input {
   min-width: 300px;
-  border-radius: 10px;
-  padding: 0.25rem;
+
+  padding: 0.5rem;
   outline: none;
   border: none;
+  box-shadow: 2px 2px 5px #333;
 }

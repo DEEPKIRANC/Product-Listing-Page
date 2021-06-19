@@ -2,3 +2,23 @@
   flex: 0.8;
   background: #fff;
 }
+.top-section {
+  padding: 0.5rem;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.top-section > button {
+  padding: 0.25rem;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.products-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1rem;
+}

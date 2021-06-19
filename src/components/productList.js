@@ -5,7 +5,7 @@ const productList = [
     price: 407,
     brand: "Peter England",
     sizes: ["M", "XL"],
-    imageURL: "../images/Men/Men-1-407.jpeg",
+    imageURL: require("../images/Men/Men-1-407.jpeg"),
     category: "Men"
   },
   {
@@ -14,7 +14,7 @@ const productList = [
     price: 1139,
     brand: "US Polo Assassin",
     sizes: ["M"],
-    imageURL: "../images/Men/Men-2-1139.jpeg",
+    imageURL: require("../images/Men/Men-2-1139.jpeg"),
     category: "Men"
   },
   {
@@ -23,7 +23,7 @@ const productList = [
     price: 584,
     brand: "US Polo Assassin",
     sizes: ["L", "XL"],
-    imageURL: "../images/Men/Men-3-584.jpeg",
+    imageURL: require("../images/Men/Men-3-584.jpeg"),
     category: "Men"
   },
   {
@@ -32,7 +32,7 @@ const productList = [
     price: 625,
     brand: "Manyavar",
     sizes: ["L"],
-    imageURL: "../images/Men/Men-4-625.jpeg",
+    imageURL: require("../images/Men/Men-4-625.jpeg"),
     category: "Men"
   },
   {
@@ -41,7 +41,7 @@ const productList = [
     price: 2400,
     brand: "Raymond",
     sizes: ["S", "M", "L"],
-    imageURL: "../images/Men/Men-5-2400.jpeg",
+    imageURL: require("../images/Men/Men-5-2400.jpeg"),
     category: "Men"
   },
   {
@@ -50,7 +50,7 @@ const productList = [
     price: 900,
     brand: "Peter England",
     sizes: ["M", "S"],
-    imageURL: "../images/Men/Men-6-900.jpeg",
+    imageURL: require("../images/Men/Men-6-900.jpeg"),
     category: "Men"
   },
   {
@@ -59,7 +59,7 @@ const productList = [
     price: 990,
     brand: "Manyavar",
     sizes: ["M"],
-    imageURL: "../images/Women/Women-1-990.jpeg",
+    imageURL: require("../images/Women/Women-1-990.jpeg"),
     category: "Women"
   },
   {
@@ -68,7 +68,7 @@ const productList = [
     price: 520,
     brand: "Biba",
     sizes: ["L", "XL"],
-    imageURL: "../images/Women/Women-2-520.jpeg",
+    imageURL: require("../images/Women/Women-2-520.jpeg"),
     category: "Women"
   },
   {
@@ -77,7 +77,7 @@ const productList = [
     price: 780,
     brand: "Biba",
     sizes: ["M", "L"],
-    imageURL: "../images/Women/Women-3-780.jpeg",
+    imageURL: require("../images/Women/Women-3-780.jpeg"),
     category: "Women"
   },
   {
@@ -86,7 +86,7 @@ const productList = [
     price: 650,
     brand: "Manyavar",
     sizes: ["L", "M", "XL"],
-    imageURL: "../images/Women/Women-4-650.jpeg",
+    imageURL: require("../images/Women/Women-4-650.jpeg"),
     category: "Women"
   },
   {
@@ -95,7 +95,7 @@ const productList = [
     price: 400,
     brand: "Biba",
     sizes: ["S", "M", "L", "XL"],
-    imageURL: "../images/Women/Women-5-400.jpeg",
+    imageURL: require("../images/Women/Women-5-400.jpeg"),
     category: "Women"
   },
   {
@@ -104,7 +104,7 @@ const productList = [
     price: 850,
     brand: "Miss Chase",
     sizes: ["M", "S", "L"],
-    imageURL: "../images/Women/Women-6-850.jpeg",
+    imageURL: require("../images/Women/Women-6-850.jpeg"),
     category: "Women"
   }
 ];

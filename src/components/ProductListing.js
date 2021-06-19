@@ -20,6 +20,7 @@ export const ProductListing = () => {
     setProductList(resArr);
     setSortPrice(e.target.value);
   };
+
   return (
     <div className="productList-container">
       <div className="top-section">
@@ -39,6 +40,7 @@ export const ProductListing = () => {
         />
         Price -- High to Low
       </div>
+
       <div className="products-section">
         {productList.length > 0 ? (
           productList.map((product, index) => {

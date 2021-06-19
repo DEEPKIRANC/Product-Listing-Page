@@ -9,17 +9,17 @@ export const ProductListing = () => {
   useEffect(() => {
     setProductList(products);
   }, [products]);
-  useEffect(() => {
-    if (sortPrice === "") {
-      setProductList(products);
-    } else if (sortPrice === "highToLow") {
-      const sortedProducts = productList.sort((a, b) => a.price - b.price);
-      setProductList(sortedProducts);
-    } else if (sortPrice === "lowToHigh") {
-      const sortedProducts = productList.sort((a, b) => b.price - a.price);
-      setProductList(sortedProducts);
-    }
-  }, [sortPrice]);
+
+  const sortLowToHigh = (e) => {
+    const resArr = productList.sort((a, b) => a.price - b.price);
+    setProductList(resArr);
+    setSortPrice(e.target.value);
+  };
+  const sortHighToLow = (e) => {
+    const resArr = productList.sort((a, b) => b.price - a.price);
+    setProductList(resArr);
+    setSortPrice(e.target.value);
+  };
   return (
     <div className="productList-container">
       <div className="top-section">
@@ -28,14 +28,14 @@ export const ProductListing = () => {
           type="radio"
           value="lowToHigh"
           checked={sortPrice === "lowToHigh"}
-          onClick={(e) => setSortPrice(e.target.value)}
+          onChange={(e) => sortLowToHigh(e)}
         />
         Price -- Low to High
         <input
           type="radio"
           value="highToLow"
           checked={sortPrice === "highToLow"}
-          onClick={(e) => setSortPrice(e.target.value)}
+          onChange={sortHighToLow}
         />
         Price -- High to Low
       </div>
